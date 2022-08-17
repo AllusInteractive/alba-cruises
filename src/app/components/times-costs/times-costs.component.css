@@ -1,0 +1,93 @@
+.timetable {
+    padding: 10px;
+}
+
+.costs {
+    padding: 10px;
+}
+
+.timetable img {
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 40%;
+}
+
+td, th {
+    /* border: 1px solid #003568; */
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    font-size: 1.2em;
+    background-color: #336699;
+    color: #fff;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 200;
+}
+
+tr:nth-child(even) {
+    background-color: #cce0ff;
+}
+
+p {
+    padding: 10px;
+}
+
+.costs span strong {
+    font-size: 1.14em;
+}
+
+table.timetable {
+    width: 100%;
+    /* border: 1px solid #003568; */
+}
+
+table.timetable th {
+    text-align: center;
+    font-size: 0.75em;
+    border: 1px solid #003568;
+    background-color: #336699;
+    /* color: #fff; */
+}
+
+table.timetable tr {
+    border: 1px solid #003568;
+}
+
+table.timetable td {
+    border: 1px solid #003568;
+    font-size: 0.85em;
+    text-align: center;
+}
+
+table.timetable tr ul {
+    list-style-type: none;
+}
+
+table.timetable tr ul li {
+    padding: 5px;
+}
+
+@media ( max-width: 895px) {
+    table.timetable th {
+        font-size: 0.6em;
+    }
+    table.timetable td {
+        font-size: 0.7em;
+    }
+}
+
+@media ( max-width: 790px) {
+    table.timetable td {
+        font-size: 0.65em;
+    }
+    th {
+        font-size: 1em;
+    }
+}

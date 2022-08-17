@@ -1,0 +1,158 @@
+<div class="main-content">
+  <h1>Booking Confirmation</h1>
+  <!-- TODO: Replaced hardcoded data with calls to database -->
+
+  <table>
+      <tr>
+        <th>Trip Date</th>
+        <th>Departing From</th>
+        <th>Departure Time</th>
+        <th>Arriving At</th>
+        <th>Arrival Time</th>
+      </tr>
+      <tr>
+        <td>05/06/19</td>
+        <td>Morar</td>
+        <td>11:00</td>
+        <td>Eigg</td>
+        <td>12:00</td>
+      </tr>
+  </table>
+  <br />
+  <table>
+    <tr>
+      <th>Type of Passenger</th>
+      <th>Number of Passengers</th>
+      <th>Cost per Passenger</th>
+      <th>Total Cost per Passenger</th>
+      <!-- <th>Wheelchair User</th> -->
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li *ngFor="let passenger of passengers">
+            {{passenger}}
+          </li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>2</li>
+          <li>1</li>
+          <li>1</li>
+          <li>0</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>10.00</li>
+          <li>4.50</li>
+          <li>2.50</li>
+          <li>0</li>
+        </ul>
+      </td>
+      <td style="width: 30%;">
+        <ul>
+          <li>20.00</li>
+          <li>4.50</li>
+          <li>2.50</li>
+          <li>0</li>
+        </ul>
+      </td>
+      <!-- <td>N</td> -->
+    </tr>
+  </table>
+  <table>
+    <tr>
+      <th>Overall Cost</th>
+      <td style="width:30%; background-color: #cce0ff">27.00</td>
+    </tr>
+  </table>
+  <br />
+
+  <div class="paymentDetails">
+    <form>
+        <h2>Payment Details</h2>
+        <br />
+        <label for="route"><b>Payment Method:</b></label>
+        <br />
+        <select id="method" name="method" style="max-width: 200px;" class="input" required>
+          <option value="" disabled>Choose Your Route</option>
+          <option value="separator" disabled>────────────────────</option>
+          <option value="American Express">American Express</option>
+          <option value="Mastercard">Mastercard</option>
+          <option value="Visa Debit">Visa Debit</option>
+          <option value="Visa Electron">Visa Electron</option>
+        </select>
+        <br />
+        <br />
+
+        <div class="amount">
+          <b>Payment Amount:</b><br>
+          <input type="number" name="amount" style="width : 60px;" value="27.00" class="input" required disabled>
+        </div>
+        <br />
+
+        <label for="name"><b>Name on Card:</b></label><br />
+        <input type="text" placeholder="Name on Card" style="width: 200px;" name="name" required class="input">
+        <br />
+        <br />
+
+        <div class="amount">
+          <b>Card Number:</b><br>
+          <input type="number" name="cardNo" style="width: 200px;" placeholder="XXXX XXXX XXXX XXXX" class="input" required>
+        </div>
+        <br />
+
+        <div class="amount">
+          <b>Expiration Date:</b><br>
+          <select id="month" name="month" style="max-width: 60px;" class="input" required>
+              <option value="" disabled>MM</option>
+              <option value="separator" disabled>────────────────────</option>
+              <option value="01">01</option>
+              <option value="02">02</option>
+              <option value="03">03</option>
+              <option value="04">04</option>
+              <option value="05">05</option>
+              <option value="06">06</option>
+              <option value="07">07</option>
+              <option value="08">08</option>
+              <option value="09">09</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>
+            <select id="method" name="method" style="max-width: 60px;" class="input" required>
+                <option value="" disabled>YY</option>
+                <option value="separator" disabled>────────────────────</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+              </select>
+        </div>
+        <br />
+
+        <div class="amount">
+          <b>Security Code:</b><br>
+          <input type="number" name="code" style="width : 60px;" placeholder="XXX" class="input" required>
+        </div>
+        <br />
+
+        <button class="confirm" type="submit" [routerLink]="['/users/payment']"><i class="fas fa-lock"></i> Pay</button>
+    </form>
+    
+  </div>
+
+
+</div>

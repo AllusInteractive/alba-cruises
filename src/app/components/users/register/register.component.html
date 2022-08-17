@@ -1,0 +1,78 @@
+<div class="main-content">
+  <h1>Register</h1>
+
+  <form action="/action_page.php">
+
+    <div class="container signin">
+      <h4>Already have an account? Sign in <a [routerLink]="['/users/sign-in']">here.</a></h4>
+    </div>
+
+    <div class="main-container">
+      <p>Please complete this form to create an account.</p>
+      <hr>
+
+      <label for="email"><b>Email:<span style="color: red;"> *</span></b></label>
+      <input type="text" placeholder="Enter Email Address" name="email" required>
+  
+      <label for="psw"><b>Password:<span style="color: red;"> *</span></b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+  
+      <label for="psw-repeat"><b>Re-enter Password:<span style="color: red;"> *</span></b></label>
+      <input type="password" placeholder="Re-enter Password" name="psw-reenter" required>
+      <hr>
+
+      <label for="title"><b>Title:<span style="color: red;"> *</span></b></label><br />
+      <select id="title" name="title" style="max-width: 200px;" class="input" required>
+        <option value="Mr">Mr</option>
+        <option value="Mrs">Mrs</option>
+        <option value="Miss">Miss</option>
+        <option value="Ms">Ms</option>
+        <option value="Dr">Dr</option>
+      </select>
+      <br />
+      <br />
+
+      <label for="fname"><b>First Name:<span style="color: red;"> *</span></b></label>
+      <input type="text" placeholder="First Name" name="fname" required>
+
+      <label for="lname"><b>Last Name:<span style="color: red;"> *</span></b></label>
+      <input type="text" placeholder="Last Name" name="lname" required>
+
+      <label for="houseNo"><b>House Number/Name:<span style="color: red;"> *</span></b></label>
+      <input type="text" placeholder="House Number/Name" name="houseNo" required>
+
+      <label for="streetName"><b>Street Name:<span style="color: red;"> *</span></b></label>
+      <input type="text" placeholder="Street Name" name="streetName" required>
+
+      <label for="town"><b>Town/City:<span style="color: red;"> *</span></b></label>
+      <input type="text" placeholder="Town/City" name="town" required>
+
+      <label for="county"><b>County:<span style="color: red;"> *</span></b></label>
+      <input type="text" placeholder="County" name="county" required>
+
+      <label for="country"><b>Country:<span style="color: red;"> *</span></b></label>
+      <input type="text" placeholder="Country" name="country" required>
+
+      <label for="postCode"><b>Post Code:<span style="color: red;"> *</span></b></label>
+      <input type="text" placeholder="Post Code" name="postCode" required>
+
+      <label for="telNo"><b>Contact Number:<span style="color: red;"> *</span></b></label>
+      <input type="number" placeholder="Contact Number" name="telNo" required>
+
+      <input type="checkbox" name="mailingList">  Mailing List<br>
+      <span class="teenie">Please indicate if you'd like to subscribe to our e-mail Mailing List</span>
+  
+      <div class="input-check">
+        <span style="color: red;"> *</span> Required. <br />
+        <span class="teenie">We will never share any of your information with your consent</span>
+        <br /><br />
+      </div>     
+
+      <hr>
+  
+      <button type="submit" class="registerbtn" disabled>Register</button>
+      <button class="cancelbtn" input="reset">Clear</button>
+    </div>
+  </form>
+
+</div>

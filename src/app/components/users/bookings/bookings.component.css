@@ -1,0 +1,100 @@
+h3 {
+    color: #003568;
+    text-align: center;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    align-content: center;
+    font-size: 1.1em;
+    border-radius: 10px;
+    background-color: #cce0ff;
+    padding: 10px;
+}
+
+form {
+    text-align: center;
+    color: #003568;
+}
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical
+}
+
+button {
+    font-size: 24px;
+    color: #003568;
+    padding: 5px;
+}
+
+button:disabled {
+    color: #999999;
+}
+
+.input-group {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+}
+
+.input-people {
+    padding-top: 20px;
+}
+
+.input-check {
+    padding: 20px;
+}
+
+.input {
+    font-size: 1em;
+}
+
+
+.submit {
+    background-color: #009933;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.reset {
+    background-color: #900;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.submit:hover {
+    background-color: #006622;
+    color: #d3d3d3;
+}
+
+.reset:hover {
+    background-color: #600;
+    color: #d3d3d3;
+}
+
+.teenie {
+    font-size: 0.8em;
+}

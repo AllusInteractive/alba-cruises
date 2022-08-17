@@ -1,0 +1,77 @@
+footer {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Electrolize', sans-serif;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 500px;
+    height: 2px;
+    left: 50%;
+    margin-left: -250px;
+    background: linear-gradient(to right,rgba(158,161,168,0) 0,#003568 50%,rgba(158,161,168,0) 100%)
+}
+
+h4 {
+    margin-top: 15px;
+    color: #003568;
+}
+
+i {
+    font-size: 3em;
+    padding-top: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+li {
+    display: inline-block;
+    padding: 5px;
+}
+
+li a {
+    color: #000;
+}
+
+/* TODO: Add in functionality i.e. padding-top: 0; to make social media icons rise when hovered over */
+
+li a:hover .fa-facebook-square{
+    color: rgb(55, 82, 143);
+}
+
+li a:hover .fa-twitter-square{
+    color: rgb(25, 151, 240);
+}
+
+li a:hover .fa-snapchat-square{
+    color: rgb(255, 251, 3);
+}
+
+li a:hover .fa-google-plus-square{
+    color: rgb(216, 71, 60);
+}
+
+li a:hover .fa-linkedin{
+    color: rgb(0, 108, 172);
+}
+
+@media (max-width: 550px) {
+    footer {
+      padding-bottom: 50px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #003568;
+}

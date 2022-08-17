@@ -1,0 +1,67 @@
+<div class="main-content">
+  <h1>Bookings</h1>
+  <h3>Book your journey now!</h3>
+  <br />
+
+  <div class="container">
+    <form>
+
+        <label for="route">Choose Your Route:<span style="color: red;"> *</span></label>
+        <br />
+        <select id="route" name="route" style="max-width: 200px;" class="input" required>
+          <option value="" disabled>Choose Your Route</option>
+          <option value="separator" disabled>────────────────────</option>
+          <option value="Morar - Eigg">Morar - Eigg</option>
+          <option value="Eigg - Muck">Eigg - Muck</option>
+          <option value="Muck - Eigg">Muck - Eigg</option>
+          <option value="Eigg - Morar">Eigg - Morar</option>
+          <option value="Eigg - Rum">Eigg - Rum</option>
+          <option value="Rum - Eigg">Rum - Eigg</option>
+          <option value="Morar - Rum">Morar - Rum</option>
+          <option value="Rum - Morar">Rum - Morar</option>
+        </select>
+        <br />
+    
+        <label for="date">Choose Your Date:<span style="color: red;"> *</span></label><br />
+        <input type="date" name="depDate" class="input" required>
+        <br />
+                
+                
+          <div class="input-people">
+            Number of adults<span style="color: red;"> *</span><br>
+            <input type="number" name="adultsNo" style="width : 100px;" min="1" value="0" class="input" required>
+          </div>
+
+          <div class="input-people">
+            Number of children (9-16)<br>
+            <input type="number" name="child9-16" style="width : 100px;" min="0" value="0" class="input">
+          </div>
+
+          <div class="input-people">
+            Number of children (3-8)<br>
+            <input type="number" name="child3-8" style="width : 100px;" min="0" value="0" class="input">
+          </div>
+
+          <div class="input-people">
+            Number of infants (2 and under)<br>
+            <input type="number" name="infantNo" style="width : 100px;" min="0" value="0" class="input">
+          </div>
+
+          <div class="input-check">
+            <span style="color: red;"> *</span> Required. <br />
+            <span class="teenie">Children under 16 will not be admitted onto the ferry without an adult present.</span>
+            <br /><br />
+            Additionally, we are able to accomodate only one wheelchair user per trip, due to current capacity. Please indicate if one of your party is a wheelchair user.
+            <!-- <br /><br />
+            One of my party is a wheelchair user -->
+            <input type="checkbox" name="wheelchair"><br>
+          </div>
+
+          <!-- <button class="submit" type="submit" (click)="cancel()" onclick="bookingAlert()">Book Now!</button> -->
+          <button class="submit" type="submit" onclick="bookingAlert()" [routerLink]="['/users/payment']">Book Now!</button>
+          <button class="reset" input="reset">Reset</button>
+      </form>
+      
+  </div>
+
+</div>

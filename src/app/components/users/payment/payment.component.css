@@ -1,0 +1,52 @@
+table {
+    /* font-family: arial, sans-serif; */
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #003568;
+    text-align: center;
+    padding: 8px;
+}
+
+th {
+    font-size: 1.2em;
+    background-color: #336699;
+    color: #fff;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 200;
+}
+
+tr:nth-child(even) {
+    background-color: #cce0ff;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.paymentDetails {
+    text-align: center;
+}
+
+.input {
+    font-size: 1em;
+}
+
+.confirm {
+    background-color: #009933;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.confirm:hover {
+    background-color: #006622;
+    color: #d3d3d3;
+}

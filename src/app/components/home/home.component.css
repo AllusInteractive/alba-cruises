@@ -1,0 +1,31 @@
+img {
+    max-width: 1000px;
+    padding: 0 50px;
+}
+
+h5 {
+    padding-left: 50px;
+}
+
+@media (max-width: 1000px) {
+    img {
+        max-width: 750px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 750px) {
+    img {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    img {
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 0;
+    }
+}

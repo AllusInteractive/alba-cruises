@@ -1,0 +1,21 @@
+<div class="main-content">
+    <h1>Sign In</h1>
+
+    <form action="/action_page.php">
+      <div class="main-container">
+    
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="someone@example.com" name="email" required>
+    
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+    
+        <button type="submit" class="signinbtn" [routerLink]="['/users/account']">Sign In</button>
+        <button class="cancelbtn"  input="reset">Clear</button>
+      </div>
+      
+      <div class="container register">
+        <h4>Haven't yet created an account? Register <a [routerLink]="['/users/register']">here.</a></h4>
+      </div>
+    </form>
+  </div>

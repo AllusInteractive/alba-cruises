@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Alba Cruises</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="assets/images/logoAC.png">
+  <link href="https://fonts.googleapis.com/css?family=Bai+Jamjuree|Electrolize|Titillium+Web" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body>
+  <app-root></app-root>
+
+  <script>
+    // OPEN AND CLOSE SIDE MENU
+    function openNav() 
+    {
+      document.getElementById("sideNav").style.width = "80%";
+      // document.getElementById("sign-up-button").style.display = "none";
+      // document.getElementById("login-button").style.display = "none";
+      // document.getElementById("navClose").style.display = "initial";
+    }
+
+    function closeNav() 
+    {
+      document.getElementById("sideNav").style.width = "0";
+      // document.getElementById("sign-up-button").style.display = "initial";
+      // document.getElementById("login-button").style.display = "initial";
+      // document.getElementById("navClose").style.display = "none";
+    }
+
+    // BOOKING POPUP/ALERT
+    function bookingAlert()
+    {
+      // TODO: Attempt to add redirect to alert box when OK button is clicked
+      // if (confirm("Thank you, your booking is now complete!")) 
+      // {
+      //   // window.location.href = '/home';
+      //   [routerLink]="['/home']"
+      // } 
+      // else 
+      // {
+      // }
+    }
+
+    // ACCOUNT TABS
+    function openTab(evt, tabName) 
+    {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    // Get the element with id="defaultOpen" and click on it
+    // document.getElementById("defaultOpen").click();
+
+    // VIEW BOOKING POPUP/MODAL
+    var modal = document.getElementById('modalBooking');
+
+    var btn = document.getElementById("viewBooking");
+
+    var span = document.getElementsByClassName("close")[0];
+
+    function viewBooking() 
+    {
+        // modal.style.display = "block";
+        document.getElementById('modalBooking').style.display = "block";
+    }
+
+    function closeBooking() 
+    {
+        // modal.style.display = "none";
+        document.getElementById('modalBooking').style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    // window.onclick = function(event) 
+    // {
+    //     if (event.target == modal) {
+    //         modal.style.display = "none";
+    //     }
+    // }
+  </script>
+</body>
+</html>

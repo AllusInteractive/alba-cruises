@@ -1,0 +1,101 @@
+.main-container {
+    padding: 16px;
+    background-color: #cce0ff;
+    border-radius: 0 0 10px 10px;
+}
+
+.container {
+    padding: 16px;
+    border-radius: 10px 10px 0 0;
+}
+
+input[type=text], input[type=password], input[type=number] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=number]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.registerbtn {
+    background-color: #009933;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.registerbtn:disabled {
+    background-color: #d3d3d3;
+}
+
+.cancelbtn {
+    background-color: #900;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.registerbtn:hover {
+    background-color: #006622;
+    color: #d3d3d3;
+    cursor: default;
+}
+
+.registerbtn:disabled:hover {
+    background-color: #d3d3d3;
+    color: #fff;
+}
+
+.cancelbtn:hover {
+    background-color: #600;
+    color: #d3d3d3;
+}
+
+.signin a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.signin {
+    background-color: #336699;
+    text-align: center;
+    color:#fff;
+}
+
+h4 {
+    font-weight: 400;
+}
+
+.input {
+    font-size: 1em;
+}
+
+.input-check {
+    padding: 20px;
+}
+
+.teenie {
+    font-size: 0.8em;
+}

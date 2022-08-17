@@ -1,0 +1,223 @@
+<div class="main-content">
+  <h1>Times and Fares</h1>
+
+  <p>
+    Please find our 2019 timetable below, which will give you all the times you'll need for the coming season. 
+    <br />
+    Below that is our pricing guide for all our available fares.
+  </p>
+
+  <div class="timetable">
+    <h2>Timetable</h2>
+    <!-- <img src="../../../assets/images/timetable.png"> -->
+
+    <table class="timetable">
+      <!-- DATE AND ISLAND HEADER -->
+      <tr>
+        <th>
+          Monday<br />
+          Eigg & Muck<br />
+          20th May - 21st Oct
+        </th>
+        <th>
+          Tuesday<br />
+          Eigg & Rum<br />
+          20th May - 21st Oct
+        </th>
+        <th>
+          Wednesday<br />
+          Eigg & Muck<br />
+          20th May - 21st Oct
+        </th>
+        <th>
+          Thursday<br />
+          Rum<br />
+          20th May - 21st Oct
+        </th>
+        <th>
+          Friday<br />
+          Eigg & Muck<br />
+          20th May - 21st Oct
+        </th>
+        <th>
+          Saturday<br />
+          Eigg & Rum<br />
+          Jun, Jul & Aug Only
+        </th>
+        <th>
+          Sunday<br />
+          Eigg & Muck<br />
+          Jun, Jul & Aug Only
+        </th>
+      </tr>
+      <!-- DEP AND ARR TIMES -->
+      <tr>
+        <td>
+          <ul>
+            <li *ngFor="let eiggMuckTime of eiggMuckTimes">
+              {{eiggMuckTime}}
+            </li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li *ngFor="let eiggRumTime of eiggRumTimes">
+                {{eiggRumTime}}
+            </li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li *ngFor="let eiggMuckTime of eiggMuckTimes">
+              {{eiggMuckTime}}
+            </li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li *ngFor="let rumTime of rumTimes">
+              {{rumTime}}
+            </li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li *ngFor="let eiggMuckTime of eiggMuckTimes">
+              {{eiggMuckTime}}
+            </li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li *ngFor="let eiggRumTime of eiggRumTimes">
+              {{eiggRumTime}}
+            </li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li *ngFor="let eiggMuckTime of eiggMuckTimes">
+              {{eiggMuckTime}}
+            </li>
+          </ul>
+        </td>
+      </tr>
+      <!-- TIME ASHORE HEADER -->
+      <tr>
+        <th>Time Ashore</th>
+        <th>Time Ashore</th>
+        <th>Time Ashore</th>
+        <th>Time Ashore</th>
+        <th>Time Ashore</th>
+        <th>Time Ashore</th>
+        <th>Time Ashore</th>
+      </tr>
+      <!-- TIME ASHORE TIMES -->
+      <tr>
+        <td>
+          <!-- <strong>Time Ashore</strong><br /> -->
+          4.5 hours on Eigg<br />
+          OR<br />
+          2.5 hours on Muck
+        </td>
+        <td>
+          <!-- <strong>Time Ashore</strong><br /> -->
+          5 hours on Eigg<br />
+          OR<br />
+          2 hours on Rum
+        </td>
+        <td>
+          <!-- <strong>Time Ashore</strong><br /> -->
+          4.5 hours on Eigg<br />
+          OR<br />
+          2.5 hours on Muck
+        </td>
+        <td>
+          <!-- <strong>Time Ashore</strong><br /> -->
+          3 hours on Rum
+        </td>
+        <td>
+          <!-- <strong>Time Ashore</strong><br /> -->
+          4.5 hours on Eigg<br />
+          OR<br />
+          2.5 hours on Muck
+        </td>
+        <td>
+          <!-- <strong>Time Ashore</strong><br /> -->
+          5 hours on Eigg<br />
+          OR<br />
+          2 hours on Rum
+        </td>
+        <td>
+          <!-- <strong>Time Ashore</strong><br /> -->
+          4.5 hours on Eigg<br />
+          OR<br />
+          2.5 hours on Muck
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="costs">
+    <h2>Fares</h2>
+    <!-- <img src="../../../assets/images/fares.png"> -->
+
+    <table>
+      <tr>
+        <th>Return fares from Morar to:</th>
+        <th>&nbsp;</th>
+      </tr>
+      <tr>
+        <td>Island of Eigg</td>
+        <td class="pull-right">£18.00</td>
+      </tr>
+      <tr>
+        <td>Island of Muck</td>
+        <td class="pull-right">£19.00</td>
+      </tr>
+      <tr>
+        <td>Island of Rum</td>
+        <td class="pull-right">£24.00</td>
+      </tr>
+    </table>
+    <br />
+    <table>
+      <tr>
+        <th>Return fares from Eigg to:</th>
+        <th>&nbsp;</th>
+      </tr>
+      <tr>
+        <td>Island of Muck</td>
+        <td class="pull-right">£10.00</td>
+      </tr>
+      <tr>
+        <td>Island of Rum</td>
+        <td class="pull-right">£16.00</td>
+      </tr>
+    </table>
+    <br />
+    <table>
+      <tr>
+        <th>Children Fares ALL ISLANDS</th>
+        <th>&nbsp;</th>
+      </tr>
+      <tr>
+        <td>2 years and under</td>
+        <td class="pull-right">Free</td>
+      </tr>
+      <tr>
+        <td>3-10 years</td>
+        <td class="pull-right">£10.00</td>
+      </tr>
+      <tr>
+        <td>11-16 years</td>
+        <td class="pull-right">£13.00</td>
+      </tr>
+    </table>
+    <br />
+    <span>
+      <strong>(Single fares are available on request)</strong>
+    </span>
+
+  </div>
+</div>

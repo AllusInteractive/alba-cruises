@@ -1,0 +1,76 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0
+}
+
+html {
+    background-color: #b3d1ff;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.pull-right {
+    float: right;
+}
+
+.pull-left {
+    float: left;
+}
+
+.teenie {
+    font-size: 0.7em;
+    padding-top: 10px;
+}
+
+.teenie a {
+    text-decoration: none;
+    color: #003568;
+}
+
+.main-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+h1 {
+    text-align: center;
+    color: #003568;
+    padding: 10px;
+}
+
+h2 {
+    color: #003568;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    cursor: pointer;
+}
+
+p {
+    text-align: justify;
+}
+
+@media (max-width: 510px) {
+    h1 {
+        margin-top: 70px;
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 460px) {
+    h1 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 390px) {
+    h1 {
+        font-size: 1.2em;
+    }
+}

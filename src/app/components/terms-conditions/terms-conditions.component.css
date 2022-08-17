@@ -1,0 +1,16 @@
+ol { 
+    counter-reset: item;
+}
+
+ol li{ 
+    display: block; margin: 10px 0; 
+}
+
+ol li:before { 
+    content: counters(item, ".") ". "; 
+    counter-increment: item; 
+}
+
+.indent { 
+    margin: 5px 0 0 30px; 
+}

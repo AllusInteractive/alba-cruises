@@ -1,0 +1,48 @@
+<div class="navbar">
+  <div class="header">
+      <a [routerLink]="['/home']"><img src="../../../assets/images/logoAC.png" alt="Alba Cruises"></a>
+    <h2>Alba Wildlife Cruises</h2>
+    <!-- <span class="login pull-right"><a [routerLink]="['users/register']">Register</a></span>
+    <span class="login pull-right"><a [routerLink]="['users/sign-in']">Sign In</a></span> -->
+
+    <!-- TODO: HIDE SIGN IN AND REGISTER BUTTONS AND DISPLAY WELCOME MESSAGE -->
+    <span class="login pull-right"><a [routerLink]="['users/account']">Welcome {{fname}} Reece</a></span>
+  </div>
+</div>
+
+<div class="nav-links">
+  <ul>
+    <!-- <li><a [routerLink]="['/home']">Home</a></li> -->
+    <li><a [routerLink]="['/home']"><i class="fas fa-home"></i></a></li>
+    <!-- TODO: LINK SHOULD ONLY APPEAR WHEN USER IS LOGGED IN -->
+    <li><a [routerLink]="['/users/bookings']">Bookings</a></li>
+    <li><a [routerLink]="['/routes']">Routes</a></li>
+    <li><a [routerLink]="['/times-and-costs']">Times & Fares</a></li>
+    <li><a [routerLink]="['/news']">News</a></li>
+    <li><a [routerLink]="['/contact-us']">Contact Us</a></li>
+    <li><a [routerLink]="['/about-us']" class="last-item">About Us</a></li>
+  </ul>
+</div>
+
+<div class="bottom-nav">
+  <ul>
+    <li><i class="fas fa-bars" onclick="openNav()"></i></li>
+  </ul>
+</div>
+
+<div id="sideNav" class="sidenav" onclick="closeNav()">
+  <div class="links">
+    <img src="../../../assets/images/logoAC.png" alt="Alba Cruises">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <ul>
+      <li class="list-item"><a [routerLink]="['/home']">Home</a></li>
+      <!-- TODO: LINK SHOULD ONLY APPEAR WHEN USER IS LOGGED IN -->
+      <li class="list-item"><a [routerLink]="['/users/bookings']">Bookings</a></li>
+      <li class="list-item"><a [routerLink]="['/routes']">Routes</a></li>
+      <li class="list-item"><a [routerLink]="['/times-and-costs']">Times & Fares</a></li>
+      <li class="list-item"><a [routerLink]="['/news']">News</a></li>
+      <li class="list-item"><a [routerLink]="['/contact-us']">Contact Us</a></li>
+      <li class="list-item"><a [routerLink]="['/about-us']">About Us</a></li>
+    </ul>
+  </div>
+</div>

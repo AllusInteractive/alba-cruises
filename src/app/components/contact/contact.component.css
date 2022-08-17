@@ -1,0 +1,121 @@
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical
+}
+
+.container {
+    border-radius: 10px;
+    background-color: #cce0ff;
+}
+
+button {
+    font-size: 24px;
+    color: #003568;
+    padding: 5px;
+}
+
+button:disabled {
+    color: #999999;
+}
+
+.header {
+    color: #003568;
+    text-align:center;
+    padding-top:20px;
+    margin-top:0;
+}
+
+.form-group {
+    margin: 10px;
+}
+
+.submit {
+    background-color: #009933;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.cancel {
+    background-color: #900;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.submit:hover {
+    background-color: #006622;
+    color: #d3d3d3;
+}
+
+.cancel:hover {
+    background-color: #600;
+    color: #d3d3d3;
+}
+
+.column {
+    float: left;
+    padding: 20px;
+}
+
+.left {
+    width: 35%;
+}
+
+.right {
+    width: 65%;
+    border-left: 2px solid #003568;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+p {
+    padding: 5px;
+    text-align: justify;
+}
+
+h2 {
+    color: #003568;
+}
+
+label {
+    color: #003568;
+}
+
+p strong {
+    color: #003568;
+}
+
+@media (max-width: 510px) {
+    .column.right {
+        display: none;
+    }
+    .column.left {
+        width: 100%;
+    }
+}

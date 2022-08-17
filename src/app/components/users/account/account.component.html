@@ -1,0 +1,164 @@
+<div class="main-content">
+  <h1>My Account</h1>
+
+  <div class="container-top signin">
+    <h4>Ready to make a booking? Click <a [routerLink]="['/users/bookings']">here</a> to book your journey now!</h4>
+  </div>
+
+  <div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'Details')" id="defaultOpen">Update Details</button>
+    <button class="tablinks" onclick="openTab(event, 'Bookings')">View Bookings</button>
+    <!-- <button class="tablinks" onclick="openTab(event, 'Third')">Third Tab</button> -->
+  </div>
+
+  <div id="Details" class="tabcontent">
+    <form>
+      <div class="main-container">
+        <h4>Update Your Details</h4>
+        <hr>
+
+        <label for="email"><b>Email:</b></label>
+        <input type="text" placeholder="{{email}}" name="email">
+    
+        <label for="psw"><b>Password:</b></label>
+        <input type="password" placeholder="{{psw}}" name="psw">
+        <hr>
+
+        <label for="title"><b>Title:</b></label><br />
+        <select id="title" name="title" style="max-width: 200px;" class="input">
+          <option value="Mr">Mr</option>
+          <option value="Mrs">Mrs</option>
+          <option value="Miss">Miss</option>
+          <option value="Ms">Ms</option>
+          <option value="Dr">Dr</option>
+        </select>
+        <br />
+        <br />
+
+        <label for="fname"><b>First Name:</b></label>
+        <input type="text" placeholder="{{fname}}" name="fname">
+
+        <label for="lname"><b>Last Name:</b></label>
+        <input type="text" placeholder="{{lname}}" name="lname">
+
+        <label for="houseNo"><b>House Number/Name:</b></label>
+        <input type="text" placeholder="{{houseNo}}" name="houseNo">
+
+        <label for="streetName"><b>Street Name:</b></label>
+        <input type="text" placeholder="{{streetName}}" name="streetName">
+
+        <label for="town"><b>Town/City:</b></label>
+        <input type="text" placeholder="{{town}}" name="town">
+
+        <label for="county"><b>County:</b></label>
+        <input type="text" placeholder="{{county}}" name="county">
+
+        <label for="country"><b>Country:</b></label>
+        <input type="text" placeholder="{{country}}" name="country">
+
+        <label for="postCode"><b>Post Code:</b></label>
+        <input type="text" placeholder="{{postCode}}" name="postCode">
+
+        <label for="telNo"><b>Contact Number:</b></label>
+        <input type="number" placeholder="{{telNo}}" name="telNo">
+
+        <hr>
+    
+        <button type="submit" class="registerbtn">Update</button>
+        <button type="cancel" class="cancelbtn" (click)="cancel()">Cancel</button>
+      </div>
+      
+    </form>
+  </div>
+
+  <div id="Bookings" class="tabcontent">
+    <table>
+      <tr>
+        <th>Route</th>
+        <th>Booking Reference</th>
+        <th>Cost</th>
+        <th>Date</th>
+        <th>&nbsp;</th>   
+      </tr>   
+      <!-- TODO: Replace example booking with data from database -->
+      <tr>
+        <td>Morar to Eigg</td>
+        <td>BR005556</td>
+        <td>£18.00</td>
+        <td>05/06/19</td>
+        <td><button id="viewBooking" onclick="viewBooking()">View</button></td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- <div id="Third" class="tabcontent">
+    <h3>Third Tab</h3>
+    <p>This is a third tab.</p>
+  </div> -->
+
+  <div class="container-bottom signin">
+    <h4>Ready to make a booking? Click <a [routerLink]="['/users/bookings']">here</a> to book your journey now!</h4>
+  </div>
+
+  <div id="modalBooking" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeBooking()">&times;</span>
+      <h3>Boarding Pass</h3>
+      <hr>
+      <div class="customerInfo">
+        <!-- TODO: Hardcoded customer info to be replaced by call to database -->
+        Mr Reece Morgan<br />
+        35 South Street<br />
+        Elgin<br />
+        Moray<br />
+        United Kingdom<br />
+        IV31 6SG<br />
+      </div>
+      <br />
+
+      <table>
+        <tr>
+          <th>Trip Date</th>
+          <th>Departing From</th>
+          <th>Departure Time</th>
+          <th>Arriving At</th>
+          <th>Arrival Time</th>
+        </tr>
+        <tr>
+          <td>05/06/19</td>
+          <td>Morar</td>
+          <td>11:00</td>
+          <td>Eigg</td>
+          <td>12:00</td>
+        </tr>
+      </table>
+      <br />
+      <table>
+        <tr>
+          <th>Adults</th>
+          <th>Children (9-16)</th>
+          <th>Children (3-8)</th>
+          <th>Infants (2 and under)</th>
+          <th>Wheelchair User</th>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>N</td>
+        </tr>
+      </table>
+      <br />
+      <hr>
+
+      <div class="options">
+        <button class="cancelBooking">Cancel Booking</button>
+        <a [routerLink]="['#']">Edit Booking</a>
+        <a [routerLink]="['#']">Print Boarding Pass</a>
+      </div>
+      
+    </div>
+  </div>
+
+</div>
