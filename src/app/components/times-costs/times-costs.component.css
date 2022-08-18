@@ -43,6 +43,11 @@ p {
     font-size: 1.14em;
 }
 
+.table-container {
+    overflow-y: scroll;
+    white-space: nowrap;
+}
+
 table.timetable {
     width: 100%;
     /* border: 1px solid #003568; */
