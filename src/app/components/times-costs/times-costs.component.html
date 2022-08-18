@@ -11,151 +11,153 @@
     <h2>Timetable</h2>
     <!-- <img src="../../../assets/images/timetable.png"> -->
 
-    <table class="timetable">
-      <!-- DATE AND ISLAND HEADER -->
-      <tr>
-        <th>
-          Monday<br />
-          Eigg & Muck<br />
-          20th May - 21st Oct
-        </th>
-        <th>
-          Tuesday<br />
-          Eigg & Rum<br />
-          20th May - 21st Oct
-        </th>
-        <th>
-          Wednesday<br />
-          Eigg & Muck<br />
-          20th May - 21st Oct
-        </th>
-        <th>
-          Thursday<br />
-          Rum<br />
-          20th May - 21st Oct
-        </th>
-        <th>
-          Friday<br />
-          Eigg & Muck<br />
-          20th May - 21st Oct
-        </th>
-        <th>
-          Saturday<br />
-          Eigg & Rum<br />
-          Jun, Jul & Aug Only
-        </th>
-        <th>
-          Sunday<br />
-          Eigg & Muck<br />
-          Jun, Jul & Aug Only
-        </th>
-      </tr>
-      <!-- DEP AND ARR TIMES -->
-      <tr>
-        <td>
-          <ul>
-            <li *ngFor="let eiggMuckTime of eiggMuckTimes">
-              {{eiggMuckTime}}
-            </li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li *ngFor="let eiggRumTime of eiggRumTimes">
+    <div class="table-container">
+      <table class="timetable">
+        <!-- DATE AND ISLAND HEADER -->
+        <tr>
+          <th>
+            Monday<br />
+            Eigg & Muck<br />
+            20th May - 21st Oct
+          </th>
+          <th>
+            Tuesday<br />
+            Eigg & Rum<br />
+            20th May - 21st Oct
+          </th>
+          <th>
+            Wednesday<br />
+            Eigg & Muck<br />
+            20th May - 21st Oct
+          </th>
+          <th>
+            Thursday<br />
+            Rum<br />
+            20th May - 21st Oct
+          </th>
+          <th>
+            Friday<br />
+            Eigg & Muck<br />
+            20th May - 21st Oct
+          </th>
+          <th>
+            Saturday<br />
+            Eigg & Rum<br />
+            Jun, Jul & Aug Only
+          </th>
+          <th>
+            Sunday<br />
+            Eigg & Muck<br />
+            Jun, Jul & Aug Only
+          </th>
+        </tr>
+        <!-- DEP AND ARR TIMES -->
+        <tr>
+          <td>
+            <ul>
+              <li *ngFor="let eiggMuckTime of eiggMuckTimes">
+                {{eiggMuckTime}}
+              </li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li *ngFor="let eiggRumTime of eiggRumTimes">
+                  {{eiggRumTime}}
+              </li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li *ngFor="let eiggMuckTime of eiggMuckTimes">
+                {{eiggMuckTime}}
+              </li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li *ngFor="let rumTime of rumTimes">
+                {{rumTime}}
+              </li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li *ngFor="let eiggMuckTime of eiggMuckTimes">
+                {{eiggMuckTime}}
+              </li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li *ngFor="let eiggRumTime of eiggRumTimes">
                 {{eiggRumTime}}
-            </li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li *ngFor="let eiggMuckTime of eiggMuckTimes">
-              {{eiggMuckTime}}
-            </li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li *ngFor="let rumTime of rumTimes">
-              {{rumTime}}
-            </li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li *ngFor="let eiggMuckTime of eiggMuckTimes">
-              {{eiggMuckTime}}
-            </li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li *ngFor="let eiggRumTime of eiggRumTimes">
-              {{eiggRumTime}}
-            </li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li *ngFor="let eiggMuckTime of eiggMuckTimes">
-              {{eiggMuckTime}}
-            </li>
-          </ul>
-        </td>
-      </tr>
-      <!-- TIME ASHORE HEADER -->
-      <tr>
-        <th>Time Ashore</th>
-        <th>Time Ashore</th>
-        <th>Time Ashore</th>
-        <th>Time Ashore</th>
-        <th>Time Ashore</th>
-        <th>Time Ashore</th>
-        <th>Time Ashore</th>
-      </tr>
-      <!-- TIME ASHORE TIMES -->
-      <tr>
-        <td>
-          <!-- <strong>Time Ashore</strong><br /> -->
-          4.5 hours on Eigg<br />
-          OR<br />
-          2.5 hours on Muck
-        </td>
-        <td>
-          <!-- <strong>Time Ashore</strong><br /> -->
-          5 hours on Eigg<br />
-          OR<br />
-          2 hours on Rum
-        </td>
-        <td>
-          <!-- <strong>Time Ashore</strong><br /> -->
-          4.5 hours on Eigg<br />
-          OR<br />
-          2.5 hours on Muck
-        </td>
-        <td>
-          <!-- <strong>Time Ashore</strong><br /> -->
-          3 hours on Rum
-        </td>
-        <td>
-          <!-- <strong>Time Ashore</strong><br /> -->
-          4.5 hours on Eigg<br />
-          OR<br />
-          2.5 hours on Muck
-        </td>
-        <td>
-          <!-- <strong>Time Ashore</strong><br /> -->
-          5 hours on Eigg<br />
-          OR<br />
-          2 hours on Rum
-        </td>
-        <td>
-          <!-- <strong>Time Ashore</strong><br /> -->
-          4.5 hours on Eigg<br />
-          OR<br />
-          2.5 hours on Muck
-        </td>
-      </tr>
-    </table>
+              </li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li *ngFor="let eiggMuckTime of eiggMuckTimes">
+                {{eiggMuckTime}}
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <!-- TIME ASHORE HEADER -->
+        <tr>
+          <th>Time Ashore</th>
+          <th>Time Ashore</th>
+          <th>Time Ashore</th>
+          <th>Time Ashore</th>
+          <th>Time Ashore</th>
+          <th>Time Ashore</th>
+          <th>Time Ashore</th>
+        </tr>
+        <!-- TIME ASHORE TIMES -->
+        <tr>
+          <td>
+            <!-- <strong>Time Ashore</strong><br /> -->
+            4.5 hours on Eigg<br />
+            OR<br />
+            2.5 hours on Muck
+          </td>
+          <td>
+            <!-- <strong>Time Ashore</strong><br /> -->
+            5 hours on Eigg<br />
+            OR<br />
+            2 hours on Rum
+          </td>
+          <td>
+            <!-- <strong>Time Ashore</strong><br /> -->
+            4.5 hours on Eigg<br />
+            OR<br />
+            2.5 hours on Muck
+          </td>
+          <td>
+            <!-- <strong>Time Ashore</strong><br /> -->
+            3 hours on Rum
+          </td>
+          <td>
+            <!-- <strong>Time Ashore</strong><br /> -->
+            4.5 hours on Eigg<br />
+            OR<br />
+            2.5 hours on Muck
+          </td>
+          <td>
+            <!-- <strong>Time Ashore</strong><br /> -->
+            5 hours on Eigg<br />
+            OR<br />
+            2 hours on Rum
+          </td>
+          <td>
+            <!-- <strong>Time Ashore</strong><br /> -->
+            4.5 hours on Eigg<br />
+            OR<br />
+            2.5 hours on Muck
+          </td>
+        </tr>
+      </table>
+    </div>
   </div>
 
   <div class="costs">
